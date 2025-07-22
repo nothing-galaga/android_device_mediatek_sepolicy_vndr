@@ -167,3 +167,6 @@ allow ccci_mdinit proc_version:file r_file_perms;
 allow ccci_mdinit mcf_ota_file:dir { getattr search };
 allow ccci_mdinit mcf_ota_file:file rw_file_perms;
 
+
+# Allow ccci_mdinit to set radio props
+set_prop(ccci_mdinit, vendor_mtk_radio_prop)
