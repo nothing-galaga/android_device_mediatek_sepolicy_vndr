@@ -201,3 +201,7 @@ allow rild nvram_device:blk_file rw_file_perms;
 
 # CNOP VOWIFI support
 get_prop(rild, vendor_mtk_cnop_vowifi_prop)
+
+# Allow rild to get/set mtk default props
+get_prop(rild, vendor_mtk_default_prop)
+set_prop(rild, vendor_mtk_default_prop)
